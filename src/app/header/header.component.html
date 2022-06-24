@@ -1,0 +1,23 @@
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+<mat-toolbar color="primary">
+  <span>
+    <a routerLink="/home">MyApp</a>
+  </span>
+  <span class="spacer"></span>
+  <ul>
+    <li>
+      <a mat-button routerLink="/home" routerLinkActive="mat-accent">Home</a>
+    </li>
+    <li>
+      <a mat-button routerLink="/about-us" routerLinkActive="mat-accent">About Us</a>
+    </li>
+    <li>
+      <a mat-button routerLink="/contact-us" routerLinkActive="mat-accent">Contact Us</a>
+    </li>
+    <li>
+      <a *ngIf="!isLoggedIn" mat-button routerLink="/signin" routerLinkActive="mat-accent">Sign in</a>
+    </li>
+  </ul>
+</mat-toolbar>
